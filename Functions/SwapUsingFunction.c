@@ -1,0 +1,32 @@
+/*
+Program: Swap Using Function
+Author: Abhijal C.A.
+Description: Swaps two numbers using a function and pointers.
+*/
+
+#include <stdio.h>
+
+void swap(int *a, int *b)
+{
+    int temp;
+
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main()
+{
+    int num1, num2;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    printf("Before swapping: %d %d\n", num1, num2);
+
+    swap(&num1, &num2);
+
+    printf("After swapping: %d %d\n", num1, num2);
+
+    return 0;
+}
